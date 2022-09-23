@@ -1,52 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Oswald:wght@500&display=swap");
-nav h1 {
+
+nav{
+  background-color: darksalmon;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+nav h2 {
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 2vh;
   padding-top: 2vh;
   font-family: "Dosis", sans-serif;
-  color: #ffff; }
+  color: #ffff; 
+}
 
 nav:hover {
   background-color: #ffffff17;
-  transition-duration: 1s; }
+  transition-duration: 1s; 
+}
 
-nav .nav-item a, nav #navbarScrollingDropdown, nav .dropdown-item {
+nav .nav-item, nav a, nav #navbarScrollingDropdown, nav .dropdown-item {
+  display: flex;
+  justify-content: space-between;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Dosis", sans-serif;
   color: #ffff;
   font-weight: 300;
-  color: #ffffff;
-  z-index: 110; }
-  nav .nav-item a:hover, nav #navbarScrollingDropdown:hover, nav .dropdown-item:hover {
-    color: #de90ff; }
+  z-index: 110; 
+  list-style: none;
+  text-decoration: none;
+
+}
+nav .nav-item a:hover, nav #navbarScrollingDropdown:hover, nav .dropdown-item:hover {
+  color: #de90ff; 
+}
 
 nav .dropdown-menu {
   background-color: transparent;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 nav button {
   /*important para sacar el color del borde del button de bootstrap*/
-  color: transparent !important; }
+  color: transparent !important; 
+}
 
 a {
   text-decoration: none;
   list-style: none;
-  color: #ffffff; }
-  a:hover {
-    color: #de90ff; }
-
-.icon-cart, .icon-insta {
-  display: none; }
-
-.icon-insta img, .icon-cart img {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
+  color: #ffffff; 
+}
+a:hover {
+  color: #de90ff; 
+}
 
 #nav-about {
   font-size: large  !important;
-  padding: 1.5% !important; }
-  #nav-about h1 {
-    font-size: x-large !important; }
+  padding: 1.5% !important; 
+}
+#nav-about h2 {
+  font-size: x-large !important; 
+}

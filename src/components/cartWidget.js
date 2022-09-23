@@ -1,17 +1,14 @@
 import React from 'react';
 import cartIcon from './cart-shopping-solid.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './CartWidget.css';
 const CartWidget = () => {
 
-  
+    return (
 
-        return (
-            <div className="icon-cart">
-                <a href="#"><img src={cartIcon} className="cart-icon-img"/></a>   
-                <div  className="num">0</div>
-            </div> 
+        <a href="#"><img src={cartIcon} className="cart-icon-img"/></a>   
 
-        )
+    )
 
 }
 

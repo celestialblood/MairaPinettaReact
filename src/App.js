@@ -8,10 +8,7 @@ function App() {
   return (
     <div>
       
-      <Navbar>
-        <cartWidget></cartWidget> 
-      </Navbar>
-      
+      <Navbar></Navbar>
       <itemListContainer greetings= "Hi, Welcome!"> </itemListContainer>
 
     </div>
