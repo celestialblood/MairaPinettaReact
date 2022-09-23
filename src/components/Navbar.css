@@ -1,50 +1,52 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Oswald:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Oswald:wght@500&display=swap");
 nav h1 {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
-    font-family: "Dosis", sans-serif;
-    color: #ffff; }
-  
-  nav:hover {
-    background-color: #ffffff17;
-    transition-duration: 1s; }
-  
-  nav .nav-item a, nav #navbarScrollingDropdown, nav .dropdown-item {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Dosis", sans-serif;
-    color: #ffff;
-    font-weight: 300;
-    color: #ffffff;
-    z-index: 110; }
-    nav .nav-item a:hover, nav #navbarScrollingDropdown:hover, nav .dropdown-item:hover {
-      color: #de90ff; 
-    }
-  
-  nav .dropdown-menu {
-    background-color: transparent;
-    color: #ffffff; }
-  
-  nav button {
-    /*important para sacar el color del borde del button de bootstrap*/
-    color: transparent !important; }
-  
-  a {
-    text-decoration: none;
-    list-style: none;
-    color: #ffffff; }
-    a:hover {
-      color: #de90ff; }
-  
-  .icon-cart, .icon-insta {
-    display: none; }
-  
-  .icon-insta img, .icon-cart img {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; }
-  
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  font-family: "Dosis", sans-serif;
+  color: #ffff; }
+
+nav:hover {
+  background-color: #ffffff17;
+  transition-duration: 1s; }
+
+nav .nav-item a, nav #navbarScrollingDropdown, nav .dropdown-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  color: #ffff;
+  font-weight: 300;
+  color: #ffffff;
+  z-index: 110; }
+  nav .nav-item a:hover, nav #navbarScrollingDropdown:hover, nav .dropdown-item:hover {
+    color: #de90ff; }
+
+nav .dropdown-menu {
+  background-color: transparent;
+  color: #ffffff; }
+
+nav button {
+  /*important para sacar el color del borde del button de bootstrap*/
+  color: transparent !important; }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff; }
+  a:hover {
+    color: #de90ff; }
+
+.icon-cart, .icon-insta {
+  display: none; }
+
+.icon-insta img, .icon-cart img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+#nav-about {
+  font-size: large  !important;
+  padding: 1.5% !important; }
+  #nav-about h1 {
+    font-size: x-large !important; }

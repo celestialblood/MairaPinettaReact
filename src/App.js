@@ -1,19 +1,18 @@
-
+import React from 'react';
 import './App.css';
-import Contador from './components/Contador';  
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import itemListContainer from './components/itemListContainer';
 
 function App() {
   return (
     <div>
+      
       <Navbar>
         <cartWidget></cartWidget> 
       </Navbar>
-      <itemListContainer></itemListContainer>
-      <Contador>Contador</Contador>
-
+      
+      <itemListContainer greetings= "Hi, Welcome!"> </itemListContainer>
 
     </div>
   );
