@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 // import logo from './logo.svg';
-import Navbar from './components/Navbar';
-import itemListContainer from './components/itemListContainer';
+import NavBar from './components/NavBar/NavBar';
+import itemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div>
       
-      <Navbar></Navbar>
-      <itemListContainer greetings= "Hi, Welcome!"> </itemListContainer>
+      <NavBar></NavBar> 
+      <itemListContainer greeting= "Hi, Welcome!"> </itemListContainer>
 
     </div>
   );

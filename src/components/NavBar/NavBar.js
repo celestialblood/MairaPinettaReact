@@ -1,7 +1,7 @@
 import React from 'react';
-import CartWidget from './CartWidget'
-import './Navbar.css'
-const Navbar = () => {
+import CartWidget from '../CartWidget/CartWidget'
+import './NavBar.css'
+const NavBar = () => {
 
     //jsx
     return (   
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item">
-                    {CartWidget}    
+                    <img src={CartWidget}/>    
                 </li>
             </ul>
 
@@ -37,4 +37,4 @@ const Navbar = () => {
     ) 
 }
 
-export default Navbar
+export default NavBar
