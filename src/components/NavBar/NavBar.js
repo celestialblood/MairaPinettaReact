@@ -28,7 +28,7 @@ const NavBar = () => {
                 </li>
 
                 <li className="nav-item">
-                    <img src={CartWidget}/>    
+                    {CartWidget}    
                 </li>
             </ul>
 

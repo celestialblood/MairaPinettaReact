@@ -50,15 +50,16 @@ nav .dropdown-menu {
   color: #ffffff;
 }
 
-nav button {
+/* nav button {
   /*important para sacar el color del borde del button de bootstrap*/
-  color: transparent !important; 
-}
+ /* color: transparent !important; 
+} */ 
 
 a {
   text-decoration: none;
   list-style: none;
   color: #ffffff; 
+  
 }
 a:hover {
   color: #de90ff; 
