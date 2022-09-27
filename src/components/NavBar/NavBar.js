@@ -27,8 +27,8 @@ const NavBar = () => {
                     <a href="#" >About</a>
                 </li>
 
-                <li className="nav-item">
-                    {CartWidget}    
+                <li className="nav-item"> 
+                    <a><CartWidget/></a> {/*paso el componente cartwidget con el icono*/}
                 </li>
             </ul>
 

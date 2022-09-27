@@ -50,25 +50,20 @@ nav .dropdown-menu {
   color: #ffffff;
 }
 
-/* nav button {
+ nav button {
   /*important para sacar el color del borde del button de bootstrap*/
- /* color: transparent !important; 
-} */ 
+  color: transparent !important; 
+}  
 
+.icon-cart{
+  font-size: 3vh;
+}
 a {
   text-decoration: none;
   list-style: none;
   color: #ffffff; 
-  
+
 }
 a:hover {
   color: #de90ff; 
-}
-
-#nav-about {
-  font-size: large  !important;
-  padding: 1.5% !important; 
-}
-#nav-about h2 {
-  font-size: x-large !important; 
 }

@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Oswald:wght@500&display=swap");
+div h3{
+    font-family: "Dosis", sans-serif;
+    color: #ffff; 
+    font-weight: 200;
+    text-align: center;
+}
