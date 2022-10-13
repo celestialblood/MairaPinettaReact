@@ -10,6 +10,7 @@ import NavBar from './components/NavBar/NavBar';
 
 //routes pages
 import ItemListContainer from './routes/Shop/ItemListContainer';
+import ItemDetail from './routes/Shop/componentsShop/ItemDetail/ItemDetail';
 import Home from './routes/Home/Home';
 
 
@@ -21,9 +22,10 @@ function App() {
       <NavBar/> {/*dejo fuera de route los que quedan fijos ej footer navbar para cambiar el icono dependiendo la pagina usar renderizadoc ondicional*/}
      
       <Routes> {/*ruteo componentes como si fueran páginas*/}
-      
+        {/* <Route path='/Detail/:id' element={<ItemDetailContainer/>}/> */}
         <Route exact path= "/" element={<Home/>} /> {/*Paso el componente home  a la ruta que quiero que este asociado*/} 
         <Route exact path= "/shop" element={<ItemListContainer/>} />
+        <Route exact path= "/shop/:id" element={<ItemDetail/>} />
 
       </Routes>
     

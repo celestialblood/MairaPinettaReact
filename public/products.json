@@ -1,10 +1,10 @@
 [
 
-  {"class":"horizontal", "id":"hidden-place", "title":"Hidden place", "price":1000, "img":"https://i.postimg.cc/JzTvjfq2/Pinetta-Maira-DSC-0396.jpg", "size":"A4"},
-  {"class":"horizontal", "id":"iridiscent-dreams", "title":"Iridiscent dreams", "price":1500, "img":"https://i.postimg.cc/8P40V2qz/20x30-Collage.jpg", "size":"A3"},
-  {"class":"horizontal", "id":"refugio", "title":"Refugio", "price":1500, "img":"https://i.postimg.cc/4xF2Yz4C/A5-edit2.jpg", "size":"A3"},
-  {"class":"vertical", "id":"home", "title":"Home", "price":1000, "img":"https://i.postimg.cc/m23G1pJv/10x15-6890.jpg", "size":"A4"},
-  {"class":"vertical", "id":"anhelo", "title":"Anhelo", "price":1000, "img": "https://i.postimg.cc/d3KxqwsL/Pinetta-Maira-6974.jpg", "size":"A4"},
-  {"class":"vertical", "id":"soft", "title":"Soft", "price":1500, "img":"https://i.postimg.cc/fTf6Rt0Z/Maira-Pinetta-Balam5.jpg", "size":"A3"}
+  {"className":"horizontal", "id":"hidden-place", "title":"Hidden place", "price":1000, "img":"https://i.postimg.cc/JzTvjfq2/Pinetta-Maira-DSC-0396.jpg", "size":"A4"},
+  {"className":"horizontal", "id":"iridiscent-dreams", "title":"Iridiscent dreams", "price":1500, "img":"https://i.postimg.cc/8P40V2qz/20x30-Collage.jpg", "size":"A3"},
+  {"className":"horizontal", "id":"refugio", "title":"Refugio", "price":1500, "img":"https://i.postimg.cc/4xF2Yz4C/A5-edit2.jpg", "size":"A3"},
+  {"className":"vertical", "id":"home", "title":"Home", "price":1000, "img":"https://i.postimg.cc/m23G1pJv/10x15-6890.jpg", "size":"A4"},
+  {"className":"vertical", "id":"anhelo", "title":"Anhelo", "price":1000, "img": "https://i.postimg.cc/d3KxqwsL/Pinetta-Maira-6974.jpg", "size":"A4"},
+  {"className":"vertical", "id":"soft", "title":"Soft", "price":1500, "img":"https://i.postimg.cc/fTf6Rt0Z/Maira-Pinetta-Balam5.jpg", "size":"A3"}
 
 ]
