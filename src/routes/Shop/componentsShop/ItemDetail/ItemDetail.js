@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 const ItemDetail = () => {  
 
     const [products, setProducts] = useState([]);
+    
+    const {productId} = useParams();
 
     useEffect(() => {   
         fetch("./products.json")
@@ -14,9 +16,8 @@ const ItemDetail = () => {
         .then((productsres) => setProducts(productsres));
     }, [])
     
-    const {productId} = useParams();
+    const product = products.find ((product) => product.id === productId);
 
-    const product = products.find ((product) === product.id === productId);
     const { img, title, price, size, className } = product; 
 
     let  idButton;
