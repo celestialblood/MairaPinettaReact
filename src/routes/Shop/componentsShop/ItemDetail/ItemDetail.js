@@ -1,51 +1,61 @@
 import React,{useState,useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import './ItemDetail.css';    
 import {Link} from 'react-router-dom';
+import  'bootstrap/dist/css/bootstrap.min.css';  //importo el css de bootstrap
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //iconos font awesome 
+import { faMagnifyingGlass, faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import './ItemDetail.css';    
+
 
 
 const ItemDetail = () => {  
 
+
     const [products, setProducts] = useState([]);
     
-    const {productId} = useParams();
+    const {id} = useParams();
 
     useEffect(() => {   
         fetch("./products.json")
         .then((res) => res.json())
         .then((productsres) => setProducts(productsres));
     }, [])
-    
-    const product = products.find ((product) => product.id === productId);
+    const product = products.find ((product) => product.id === id);
 
-    const { img, title, price, size, className } = product; 
+    // const { img, title, price, size, className } = product; 
 
     let  idButton;
 
     
     return(
         //  map es como forEach
-        
-        <div className='box'>
-            <div className='image'>
-                <img className= {className} src={img}/>
-            </div>
+        <main className='main-shop'>
+            <div className='box-container'>
+   
+                <div className='box'>
+                    <div className='image'>
+                        <img className= {product?.className} src={product?.img}/>
+                    </div>
 
-            <div className='info'> 
-                    <h3 className='title'> {title}-{size}</h3>    
-                <div className ='subInfo'>  
-                    <div className='price'>{price}<i className='bi bi-flower2'></i></div>                        
-                    <Link to ='/shop/'><h1>Back to products</h1></Link>
-                </div>
-            </div>
+                    <div className='info'> 
+                            <h3 className='title'> {product?.title}-{product?.size}</h3>    
+                        <div className ='subInfo'>  
+                            <div className='price'>{product?.price}<i className='bi bi-flower2'></i></div>                        
+                            <button><Link to ='/shop/'><h1>Back to products</h1></Link></button>
+                        </div>
+                    </div>
 
-            <div className='overlay'>
-                <button  id= {idButton} className='add fas fa-shopping-cart'></button>
-                <button className='fas fa-heart'></button>
-                <button className='fas fa-search'></button>
-            </div>
+                    <div className='overlay'>
+                        <button id= {idButton}><FontAwesomeIcon icon= {faCartPlus}/></button>
+                        <button><FontAwesomeIcon icon= {faHeart}/></button>
+                        <button><FontAwesomeIcon icon= {faMagnifyingGlass}/></button>
+                    </div>
 
-        </div>   
+                </div> 
+
+            </div>
+        </main>          
   
     )
 }

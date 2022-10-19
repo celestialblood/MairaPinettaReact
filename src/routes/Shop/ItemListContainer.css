@@ -89,9 +89,10 @@ text-transform: uppercase;
   height: 45vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: space-evenly; }
   .main-shop .box-container .box .overlay button {
+    align-content: center;
     color: #ffffff;
     font-size: 3vh;
     border: none;

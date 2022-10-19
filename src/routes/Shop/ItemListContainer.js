@@ -1,8 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import  'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //iconos font awesome 
+import { faMagnifyingGlass, faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import './ItemListContainer.css';           
-import ItemDetail from './componentsShop/ItemDetail/ItemDetail';
+
 
 const ItemListContainer = () => {
 
@@ -47,16 +50,16 @@ const ItemListContainer = () => {
                         </div>
 
                         <div className='info'> 
-                                <Link to ={`/shop/${product.id}`}><h3 className='title'>{product.title}-{product.size}</h3></Link>
+                                <h3 className='title'>{product.title}-{product.size}</h3>
                             <div className ='subInfo'>
                                 <div className='price'>{product.price}<i className='bi bi-flower2'></i></div>                        
                             </div>
                         </div>
 
                         <div className='overlay'>
-                            <button  id= {idButton} className='add fas fa-shopping-cart'></button>
-                            <button className='fas fa-heart'></button>
-                            <button className='fas fa-search'></button>
+                            <button id= {idButton}><FontAwesomeIcon icon= {faCartPlus}/></button>
+                            <button><FontAwesomeIcon icon= {faHeart}/></button>
+                            <button><Link to ={`/shop/${product.id}`}><FontAwesomeIcon icon= {faMagnifyingGlass}/></Link></button>
                         </div>
 
                     </div>    

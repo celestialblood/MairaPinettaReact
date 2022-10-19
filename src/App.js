@@ -1,5 +1,8 @@
 import React from 'react';
+import  'bootstrap/dist/css/bootstrap.min.css';  //importo el css de bootstrap
 import './App.css';
+//import Button from 'react-bootstrap/Button'  
+
 // import logo from './logo.svg';
 
 //routes
@@ -20,7 +23,7 @@ function App() {
     <BrowserRouter> {/*Meto el contenido dentro del browser routes para organziar el contenido en las url*/}
     
       <NavBar/> {/*dejo fuera de route los que quedan fijos ej footer navbar para cambiar el icono dependiendo la pagina usar renderizadoc ondicional*/}
-     
+
       <Routes> {/*ruteo componentes como si fueran páginas*/}
         {/* <Route path='/Detail/:id' element={<ItemDetailContainer/>}/> */}
         <Route exact path= "/" element={<Home/>} /> {/*Paso el componente home  a la ruta que quiero que este asociado*/} 
