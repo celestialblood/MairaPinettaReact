@@ -17,7 +17,7 @@ const ItemDetail = () => {
     const {id} = useParams();
 
     useEffect(() => {   
-        fetch("./products.json")
+        fetch("../../products.json")
         .then((res) => res.json())
         .then((productsres) => setProducts(productsres));
     }, [])
@@ -33,16 +33,16 @@ const ItemDetail = () => {
         <main className='main-shop'>
             <div className='box-container'>
    
-                <div className='box'>
+                <div className='boxdetail'>
                     <div className='image'>
-                        <img className= {product?.className} src={product?.img}/>
+                        <img className= {product?.className + "detail"} src={product?.img}/>
                     </div>
 
                     <div className='info'> 
                             <h3 className='title'> {product?.title}-{product?.size}</h3>    
                         <div className ='subInfo'>  
                             <div className='price'>{product?.price}<i className='bi bi-flower2'></i></div>                        
-                            <button><Link to ='/shop/'><h1>Back to products</h1></Link></button>
+                            <button className='backtoproductsbutton'><Link to ='/shop'>Back to products</Link></button>
                         </div>
                     </div>
 
