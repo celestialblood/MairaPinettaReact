@@ -55,8 +55,10 @@ nav .dropdown-menu {
   color: transparent !important; 
 }  
 
-.icon-cart{
-  font-size: 3vh;
+
+icon-cart{
+  font-size: 5vh;
+  color: #ffffff;
 }
 a {
   text-decoration: none;

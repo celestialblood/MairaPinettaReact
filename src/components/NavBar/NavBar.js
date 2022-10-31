@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
+//font awesome icons
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
+
 const NavBar = () => {
 
     //jsx
@@ -25,7 +29,7 @@ const NavBar = () => {
                 </li>
 
                 <li className="nav-item">
-                    <a href="#">Contact</a>
+                    <Link to='/contact'>Contact</Link>
                 </li>
 
                 <li className="nav-item">
@@ -33,7 +37,9 @@ const NavBar = () => {
                 </li>
 
                 <li className="nav-item"> 
-                    <a><CartWidget/></a> {/*paso el componente cartwidget con el icono*/}
+                    <Link to ='/cart'>
+                        <CartWidget/>
+                    </Link> {/*paso el componente cartwidget con el icono*/}
                 </li>
             </ul>
 

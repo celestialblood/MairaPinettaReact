@@ -13,11 +13,16 @@
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.2",
     "classname": "^0.0.0",
+    "firebase": "^9.13.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.38",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-moment": "^1.1.2",
     "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
+    "react-toastify": "^9.0.8",
     "web-vitals": "^3.0.2"
   },
   "scripts": {
