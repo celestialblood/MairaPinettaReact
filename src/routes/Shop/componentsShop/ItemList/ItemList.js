@@ -68,10 +68,10 @@ const ItemList = ({item}) => {
                         <button><Link to ={`/shop/${product.id}`}><FontAwesomeIcon icon= {faMagnifyingGlass}/></Link></button>
                     </div>
 
-                    {goCart ? ( <Link to="/cart">terminar compra</Link> 
+                    {goCart ? ( <Link to="/cart"> Go to Cart</Link> 
                 
                     ) : ( 
-                    <ItemCount initial={1} stock={10} onAdd={onAdd} />)}
+                    <ItemCount initial={0} stock={10} onAdd={onAdd} />)}
                 </div>    
             )}
         </div> 

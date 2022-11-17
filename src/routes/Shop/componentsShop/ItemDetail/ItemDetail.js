@@ -78,18 +78,17 @@ const ItemDetail = ({data}) => {
                 </div>
 
             </div> 
-                <div>
-                    {goToCart ? (
-						<Link to="/cart"> Terminar al carrito</Link>
-					) : (
-						<ItemCount initial={3} stock={5} onAdd={onAdd} />
-					)}
-                </div>
+            <div>
+                {goToCart ? (
+                    <Link to="/cart"> Go to Cart </Link>
+                ) : (
+                    <ItemCount initial={0} stock={10} onAdd={onAdd} />
+                )}
+            </div>
         </div>
-        
   
-    )
-}
+    );
+};
 
 export default ItemDetail;
 
