@@ -39,13 +39,13 @@ const Cart = () => {
 	}
 
 	return (
-		<>
+		<main>
 			{cart.map((product) => (
 				<ItemCart key={product.id} product={product} />
 			))}
 			<p>total: {totalPrice()}</p>
-			<button onClick={handleClick}>Emitir compra</button>
-		</>
+			<button onClick={handleClick}>Finish shooping</button>
+		</main>
 	);
 };
 
